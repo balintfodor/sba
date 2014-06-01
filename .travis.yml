@@ -11,6 +11,6 @@ compiler:
 before_script:
   - mkdir build
   - cd build
-  - cmake ..
+  - cmake .. -DCMAKE_INSTALL_PREFIX=.
 
-script: make && make install
+script: make 
