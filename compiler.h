@@ -34,9 +34,9 @@
 #ifdef _MSC_VER
 #define SBA_FINITE _finite // MSVC
 #elif defined(__ICC) || defined(__INTEL_COMPILER) || defined(__GNUC__)
-#define SBA_FINITE finite // ICC, GCC
+#define SBA_FINITE isfinite // ICC, GCC
 #else
-#define SBA_FINITE finite // other than MSVC, ICC, GCC, let's hope this will work
+#define SBA_FINITE isfinite // other than MSVC, ICC, GCC, let's hope this will work
 #endif 
 
 #endif /* _COMPILER_H_ */
