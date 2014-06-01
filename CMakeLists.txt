@@ -6,3 +6,4 @@ add_library(sba STATIC
   sba.h sba_chkjac.h compiler.h
 )
 
+install(TARGETS sba ARCHIVE DESTINATION lib)
