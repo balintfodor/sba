@@ -6,6 +6,5 @@ set(SOURCES sba_levmar.c sba_levmar_wrap.c
 
 add_library(sba STATIC ${SOURCES})
 
-install(TARGETS sba EXPORT sba ARCHIVE DESTINATION lib)
-export(TARGETS sba FILE ${CMAKE_BINARY_DIR}/sbaConfig.cmake)
-export(PACKAGE sbaConfig)
+install(TARGETS sba ARCHIVE DESTINATION lib)
+install(FILES sba.h DESTINATION include)
