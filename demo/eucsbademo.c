@@ -7,7 +7,7 @@
 #include <time.h>
 
 #include <sba.h>
-#include "../compiler.h"
+#include "compiler.h"
 #include "eucsbademo.h"
 #include "readparams.h"
 
