@@ -8,6 +8,9 @@ compiler:
   - clang
   - gcc
 
+install:
+  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install -y libblas-dev liblapack-dev; fi
+
 before_script:
   - mkdir build
   - cd build
